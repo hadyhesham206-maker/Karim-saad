@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B2F6B">
+<title>كريم سعد | مقاولات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bp:#0B2F6B;      /* blueprint */
+  --bp2:#0F3C86;     /* panel */
+  --ink:#EAF1FF;     /* line white */
+  --mute:#9DB6E3;
+  --grid:#ffffff14;
+  --hi:#FFC72C;      /* safety yellow */
+  --ln:#ffffff40;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;
+  background-color:var(--bp);color:var(--ink);min-height:100vh;
+  padding:max(22px,env(safe-area-inset-top)) 18px calc(36px + env(safe-area-inset-bottom));
+  background-image:
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.w{max-width:440px;margin:0 auto}
+
+/* ---------- hero ---------- */
+.hero{padding:8px 4px 26px}
+.draw{display:block;width:100%;height:auto;max-height:190px;margin-bottom:22px}
+.draw path{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:1;stroke-dashoffset:0}
+.draw .hk{stroke:var(--hi)}
+.draw .gd{stroke:var(--mute)}
+@media (prefers-reduced-motion:no-preference){
+  .draw path{stroke-dashoffset:1;animation:dr 1.5s cubic-bezier(.5,0,.2,1) forwards;animation-delay:var(--d,0s)}
+  @keyframes dr{to{stroke-dashoffset:0}}
+}
+h1{font-size:60px;line-height:1.15;font-weight:700;letter-spacing:-.5px}
+.en{font-size:19px;color:var(--mute);margin-top:2px;direction:ltr;text-align:right;letter-spacing:.5px}
+.dim{display:flex;align-items:center;gap:12px;margin-top:20px}
+.dim i{flex:1;height:1px;background:var(--ink);position:relative}
+.dim i::before,.dim i::after{content:"";position:absolute;top:-6px;height:13px;width:1px;background:var(--ink)}
+.dim i::before{right:0}.dim i::after{left:0}
+.dim b{font-size:22px;font-weight:700;color:var(--hi);padding:0 2px}
+
+/* ---------- contact table ---------- */
+.tb{margin-top:6px;border:1.5px solid var(--ink);background:var(--bp2)}
+.row{display:flex;align-items:center;gap:14px;padding:16px 16px;color:inherit;text-decoration:none;
+  border-bottom:1.5px solid var(--ink);min-height:76px}
+.row:last-child{border-bottom:0}
+.row small{display:block;color:var(--mute);font-size:13px;font-weight:500}
+.row .v{flex:1;min-width:0}
+.row b{display:block;font-size:22px;font-weight:700;line-height:1.35;overflow-wrap:anywhere}
+.row .num{direction:ltr;text-align:right;letter-spacing:1px}
+.row em{font-style:normal;font-weight:700;font-size:15px;padding:9px 18px;border:1.5px solid var(--hi);color:var(--hi);
+  transition:background .2s,color .2s;flex:none}
+.row:hover em,.row:focus-visible em{background:var(--hi);color:#0A2150}
+.row:active{background:#ffffff0d}
+a:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+
+/* ---------- save ---------- */
+.sv{width:100%;margin-top:18px;padding:18px;border:0;background:var(--hi);color:#0A2150;
+  font:700 18px 'IBM Plex Sans Arabic',sans-serif;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:10px;transition:transform .15s}
+.sv:active{transform:scale(.985)}
+.ft{margin-top:22px;text-align:center;font-size:13px;color:var(--mute);direction:ltr}
+</style>
+</head>
+<body>
+<main class="w">
+
+  <section class="hero">
+    <svg class="draw" viewBox="0 0 200 140" aria-hidden="true">
+      <!-- ground -->
+      <path class="gd" pathLength="1" style="--d:0s" d="M4 128H196"/>
+      <!-- finished building -->
+      <path pathLength="1" style="--d:.2s" d="M24 128V54H84V128"/>
+      <path pathLength="1" style="--d:.5s" d="M24 80H84M24 104H84"/>
+      <path class="gd" pathLength="1" style="--d:.8s" d="M36 62H46M62 62H72M36 88H46M62 88H72M36 112H46M62 112H72"/>
+      <!-- frame under construction -->
+      <path pathLength="1" style="--d:.7s" d="M110 128V84M134 128V84M158 128V84"/>
+      <path pathLength="1" style="--d:1s" d="M104 106H164M104 84H164"/>
+      <path class="gd" pathLength="1" style="--d:1.2s" d="M110 106L134 84M134 106L158 84"/>
+      <!-- crane -->
+      <path pathLength="1" style="--d:.9s" d="M176 128V16"/>
+      <path pathLength="1" style="--d:1.15s" d="M96 16H196M176 16L100 16"/>
+      <path class="gd" pathLength="1" style="--d:1.3s" d="M176 16L120 16M170 16V34"/>
+      <path class="hk" pathLength="1" style="--d:1.5s" d="M120 16V52M114 52H126"/>
+    </svg>
+
+    <h1>كريم سعد</h1>
+    <div class="en">Karim Saad</div>
+
+    <div class="dim" role="img" aria-label="مقاولات">
+      <i></i><b>مقاولات</b><i></i>
+    </div>
+  </section>
+
+  <section class="tb">
+    <a class="row" href="tel:+201013030312">
+      <div class="v"><small>موبايل</small><b class="num">01013030312</b></div>
+      <em>اتصل</em>
+    </a>
+    <a class="row" href="https://wa.me/201013030312" target="_blank" rel="noopener">
+      <div class="v"><small>واتساب</small><b class="num">01013030312</b></div>
+      <em>راسلني</em>
+    </a>
+    <a class="row" href="https://www.facebook.com/share/1AM6BP8scv/" target="_blank" rel="noopener">
+      <div class="v"><small>فيسبوك</small><b>صفحتي الشخصية</b></div>
+      <em>افتح</em>
+    </a>
+  </section>
+
+  <button class="sv" id="save" type="button">احفظ رقمي في جهات الاتصال</button>
+
+  <div class="ft">© Karim Saad</div>
+</main>
+
+<script>
+document.getElementById('save').addEventListener('click',function(){
+  var v=[
+    'BEGIN:VCARD','VERSION:3.0',
+    'N:سعد;كريم;;;','FN:كريم سعد','TITLE:مقاولات',
+    'TEL;TYPE=CELL:+201013030312',
+    'URL:https://www.facebook.com/share/1AM6BP8scv/',
+    'END:VCARD'
+  ].join('\r\n');
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([v],{type:'text/vcard;charset=utf-8'}));
+  a.download='Karim-Saad.vcf';
+  document.body.appendChild(a);a.click();a.remove();
+});
+</script>
+</body>
+</html>
